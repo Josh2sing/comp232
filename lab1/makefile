@@ -9,11 +9,9 @@ SOURCE =\
 CFLAGS = -g
 
 .c.o:
-
-gcc $(CFLAGS)-c $*.c;
+	gcc $(CFLAGS) -c $*.c;
 
 hello: *.o
-
-gcc *.0 -o $@;
-
+	gcc *.o -o $@;
+	
 
